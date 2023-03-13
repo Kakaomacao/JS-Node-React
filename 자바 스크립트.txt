@@ -1,0 +1,16 @@
+<Truthy / Falsy>
+JS만의 기준으로 참으로, 거짓으로 평가
+객체 리터럴 {}, 빈 문자열이 아닌 문자열 => 참 같은 값
+null, undefined, 숫자 0, NaN, 빈 문자열 => 거짓 같은 값
+
+ex) 
+const getName = (person) => {
+	if (!person) {
+		return "객체가 아닙니다";
+	}
+	return person.name;
+	};
+
+let person;
+const name = getName(person);
+console.log(name);
