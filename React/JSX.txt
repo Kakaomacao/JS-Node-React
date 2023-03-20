@@ -1,0 +1,16 @@
+<닫힘 규칙>
+괄호처럼 여는 태그가 있으면 닫는 태그도 있어야 함. 빈 태그를 이용해도 문제 없음.
+<div> ... <div>
+열자마자 닫음으로써 해결할 수도 있음
+ex) <image />
+
+<최상위 규칙>
+jsx의 표현식은 반드시 하나의 최상위 태그로 다른 태그들을 묶어 주어야함
+=> 그러고 싶지 않다면 react.fragment 기능을 이용해야 함
+ex)
+import React from 'react';
+
+<React.Fragment>
+  ...    ...    ...
+</React.Fragment>
+
