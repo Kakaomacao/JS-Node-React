@@ -1,0 +1,17 @@
+<React 컴포넌트의 생애 주기 (Life Cycle)>
+각 lifecycle마다 작업을 지시할 수도 있음
+메소드들은 class형 컴포넌트에서만 사용 가능
+하지만 use 키워드를 이용해서 함수형 컴포넌트에서도 사용 가능 (React Hooks)
+ex) useState / useEffect / useRef
+
+탄생 (Mount) => ComponentDidMount
+(화면에 나타나는 것)
+ex) 초기화 작업
+
+변화 (Update) => ComponentDidUpdate
+(업데이트, 리렌더)
+ex) 예외 처리 작업
+
+죽음 (UnMount) => ComponentWillUnmount
+(화면에서 사라짐) 
+ex) 메모리 정리 작업
